@@ -9,12 +9,12 @@ import { PortfolioBuilderComponent } from './directive/component-directive/portf
 import { NgStyleComponent } from './directive/attribute-directives/ng-style/ng-style.component';
 import { NgOnChangesComponent } from './lifecycle-hooks/ng-on-changes/ng-on-changes.component';
 import { NgOnInitComponent } from './lifecycle-hooks/ng-on-init/ng-on-init.component';
-import { DynamicRoutingComponent } from './dynamic-routing/dynamic-routing.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { NestedRouteComponent } from './nested-route/nested-route.component';
-import { Child1Component } from './nested-route/child1/child1.component';
-import { Child2Component } from './nested-route/child2/child2.component';
-import { EmployeeComponent } from './dynamic-routing/employee/employee.component';
+import { DynamicRoutingComponent } from './routing/dynamic-routing/dynamic-routing.component';
+import { PageNotFoundComponent } from './routing/page-not-found/page-not-found.component';
+import { NestedRouteComponent } from './routing/nested-route/nested-route.component';
+import { Child1Component } from './routing/nested-route/child1/child1.component';
+import { Child2Component } from './routing/nested-route/child2/child2.component';
+import { EmployeeComponent } from './routing/dynamic-routing/employee/employee.component';
 
 const routes: Routes = [
   {path:"bindings",component:FirstTestComponent},
