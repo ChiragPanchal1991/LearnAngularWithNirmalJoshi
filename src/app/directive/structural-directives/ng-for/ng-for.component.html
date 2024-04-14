@@ -1,0 +1,16 @@
+<table border="1">
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+    </tr>
+    <!-- <tr *ngfor="let f in firends">
+        <td>{{f.Name}}</td>
+        <td>{{f.Age}}</td>
+    </tr> -->
+    @for(f of firends; track f){
+        <tr>
+            <td>{{f.Name}}</td>
+            <td>{{f.Age}}</td>
+        </tr>
+    }
+</table>

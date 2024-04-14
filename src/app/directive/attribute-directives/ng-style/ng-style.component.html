@@ -1,0 +1,12 @@
+<div>
+    <input type="checkbox" value="bold" (change)="onBoldboxChange($event)"/><label>Bold</label>
+    <input type="checkbox" value="italic" (change)="onItalicboxChange($event)"/><label>Italic</label>
+    <input type="checkbox" value="underline" (change)="onUnderlineboxChange($event)"/><label>Underline</label>
+    <p [ngStyle]="{'font-style': fontStyle,'font-weight': fontweight, 'text-decoration': textDecoration}">
+        Angular is fun<br>
+    </p>
+</div>
+<!-- 
+font-style: italic;
+    font-weight: bold;
+    text-decoration: double; -->

@@ -1,0 +1,13 @@
+Method 1
+<div [ngClass]="selectedClass">
+    <input type="radio" (click)="changeStyle('red')" value="red" name="class" /><label>Red</label> 
+    <input type="radio" (click)="changeStyle('green')" value="green" name="class"/><label>Green</label> 
+    <input type="radio" (click)="changeStyle('yellow')" value="yellow" name="class"/><label>Yellow</label> 
+</div>
+
+Method 2
+<div [ngClass]="selectedClass">
+    <input type="radio" (click)="selectedClass = 'red'" value="red" name="class2" /><label>Red</label> 
+    <input type="radio" (click)="selectedClass = 'green'" value="green" name="class2"/><label>Green</label> 
+    <input type="radio" (click)="selectedClass = 'yellow'" value="yellow" name="class2"/><label>Yellow</label> 
+</div>

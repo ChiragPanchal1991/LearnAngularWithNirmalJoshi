@@ -1,0 +1,26 @@
+div{
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+.default{
+    border: 1px black solid;
+    background-color: #969696;
+}
+
+.red{
+    border: 1px red solid;
+    background-color: #ff9a9a;
+}
+
+.green{
+    border: 1px green solid;
+    background-color: #a2ff9a;
+}
+
+.yellow{
+    border: 1px yellow solid;
+    background-color: #fffa9a;
+}
+
+

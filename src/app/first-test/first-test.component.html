@@ -1,0 +1,19 @@
+<b>Interpolation Example</b>
+<div>Value of a = {{a}}</div>
+<div>Value of b = {{b}}</div>
+<div>sum = {{sum}}</div>
+<div>diff = {{diff}}</div>
+<div>mul = {{mul}}</div>
+<div>div = {{div}}</div>
+<div>
+    <b>Property binding Example:{{CheckBoxName}}</b> <input type="checkbox" [checked] = "isChecked" > 
+</div>
+<div>
+    <b>Event binding Example:</b><button type="submit" (click)="btnClicked()">Click</button> Click count = {{clickCount}}
+</div>
+<div>
+    <b>Key event binding:</b><input type="text" (keydown.shift.y)="shiftY()" />
+</div>
+<div>
+    <b>2 way binding binding:</b><input [(ngModel)]="twoWayBinding"/>{{twoWayBinding}}
+</div>

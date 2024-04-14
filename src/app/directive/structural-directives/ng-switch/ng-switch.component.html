@@ -1,0 +1,8 @@
+<input type="text" [(ngModel)]="anyNumber" (keyup)="onKeyUp()" >
+{{anyNumber}}
+<div [ngSwitch]="isPOrN">
+    <span *ngSwitchCase="1">Number is Positive</span>
+    <span *ngSwitchCase="-1">Number is Negative</span>
+    <span *ngSwitchCase="0">Number is 0</span>
+    <span *ngSwitchDefault>No Number Provided</span>
+</div>
