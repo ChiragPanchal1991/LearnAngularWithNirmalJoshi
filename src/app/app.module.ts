@@ -20,6 +20,7 @@ import { NestedRouteComponent } from './routing/nested-route/nested-route.compon
 import { Child1Component } from './routing/nested-route/child1/child1.component';
 import { Child2Component } from './routing/nested-route/child2/child2.component';
 import { EmployeeComponent } from './routing/dynamic-routing/employee/employee.component';
+import { QueryPeramComponent } from './routing/query-peram/query-peram.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { EmployeeComponent } from './routing/dynamic-routing/employee/employee.c
     NestedRouteComponent,
     Child1Component,
     Child2Component,
-    EmployeeComponent
+    EmployeeComponent,
+    QueryPeramComponent
   ],
   imports: [
     BrowserModule,

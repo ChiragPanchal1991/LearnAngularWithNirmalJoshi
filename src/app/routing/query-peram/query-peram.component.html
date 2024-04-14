@@ -1,0 +1,21 @@
+<table>
+    <tr>
+        <td>
+            Id
+        </td>
+        <td>
+            Name
+        </td>
+    </tr>
+    @for (emp of emps; track emp) {
+        <tr>
+            <td>
+               <a [routerLink]="['/queryperam-routing']" [queryParams]="{id:emp.id,name:emp.name}" >{{emp.id}}</a>
+            </td>
+            <td>
+                {{emp.name}}
+            </td>
+        </tr>
+    }
+    
+</table>

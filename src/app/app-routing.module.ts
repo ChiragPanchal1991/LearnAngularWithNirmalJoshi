@@ -15,6 +15,7 @@ import { NestedRouteComponent } from './routing/nested-route/nested-route.compon
 import { Child1Component } from './routing/nested-route/child1/child1.component';
 import { Child2Component } from './routing/nested-route/child2/child2.component';
 import { EmployeeComponent } from './routing/dynamic-routing/employee/employee.component';
+import { QueryPeramComponent } from './routing/query-peram/query-peram.component';
 
 const routes: Routes = [
   {path:"bindings",component:FirstTestComponent},
@@ -32,7 +33,9 @@ const routes: Routes = [
     {path: 'child1', component: Child1Component},
     {path: 'child2', component: Child2Component},
   ]},
-  {path:"**",component:PageNotFoundComponent}
+  {path:"queryperam-routing",component:QueryPeramComponent},
+  {path:"", redirectTo:"/bindings",pathMatch:"prefix"},//if no route is provided then app will redirect to default route
+  {path:"**",component:PageNotFoundComponent}//Provided route is not exist then display configured componets
 ];
 
 @NgModule({
