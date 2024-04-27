@@ -25,12 +25,33 @@
       <h1>Life cycle hooks</h1>
       <a routerLink="./hooks/ng-on-changes">Ng On Changes</a><br>
       <a routerLink="./hooks/ng-on-init">Ng On init</a>
+      <div>
+        <h1>Decorators</h1>
+        <div>
+          <h4>Inout Output</h4>
+          <p>
+            1. &commat;input and &commat;output both are <b>property decorators</b>.<br>
+            2. input property acts as attribute, we have bind it with squer brackets "[]".<br>
+            3. output property acts as event, we have bind it with round brackets "()". With output propert we also need
+            to use <b>EventEmitter.</b> <br>
+            4. In this example I have also implement life cycle hook.
+          </p>
+          <a routerLink="./input-output">Input Output</a><br>
+        </div>
+        <div>
+
+          <h4>View Child</h4>
+          <a routerLink="./view-child">View Child</a><br>
+        </div>
+      </div>
+
       <h1>Routing</h1>
       <h4>Dynamic Routing</h4>
-      In following example, you can check how to pass route parameters(Dynamic link) and read route parameters from URL in component<br> 
+      In following example, you can check how to pass route parameters(Dynamic link) and read route parameters from URL
+      in component<br>
       <a routerLink="./dynamic-routing">Dynamic Routing</a><br>
       <h4>Nested Routing</h4>
-      In following example, you use of "children" property of Routes class. Check <b>app-routing.module.ts</b> file<br> 
+      In following example, you use of "children" property of Routes class. Check <b>app-routing.module.ts</b> file<br>
       With the <b>router-outlet</b> directive we can rander component inside other component.<br>
       <a routerLink="/nested-route">Nested Routing</a><br>
       <h4>Query Perameter</h4>

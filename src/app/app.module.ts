@@ -21,6 +21,10 @@ import { Child1Component } from './routing/nested-route/child1/child1.component'
 import { Child2Component } from './routing/nested-route/child2/child2.component';
 import { EmployeeComponent } from './routing/dynamic-routing/employee/employee.component';
 import { QueryPeramComponent } from './routing/query-peram/query-peram.component';
+import { InoutOutputComponent } from './Decorators/inout-output/inout-output.component';
+import { ViewChildComponent } from './Decorators/view-child/view-child.component';
+import { ChildComponent } from './Decorators/inout-output/child/child.component';
+import { ViewchildChildComponent } from './Decorators/view-child/viewchild-child/viewchild-child.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +45,11 @@ import { QueryPeramComponent } from './routing/query-peram/query-peram.component
     Child1Component,
     Child2Component,
     EmployeeComponent,
-    QueryPeramComponent
+    QueryPeramComponent,
+    InoutOutputComponent,
+    ViewChildComponent,
+    ChildComponent,
+    ViewchildChildComponent
   ],
   imports: [
     BrowserModule,

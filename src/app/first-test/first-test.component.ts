@@ -6,25 +6,25 @@ import { Component } from '@angular/core';
   styleUrl: './first-test.component.css'
 })
 export class FirstTestComponent {
-a = 80;
-b = 8;
+  a = 80;
+  b = 8;
 
-sum = this.a + this.b;
-diff = this.a - this.b;
-mul = this.a * this.b;
-div = this.a / this.b;
- 
-isChecked = true;
-CheckBoxName = "First Check box";
+  sum = this.a + this.b;
+  diff = this.a - this.b;
+  mul = this.a * this.b;
+  div = this.a / this.b;
 
-twoWayBinding:string = "";
+  isChecked = true;
+  CheckBoxName = "First Check box";
 
-clickCount =0;
-btnClicked(){
-  this.clickCount = this.clickCount +1;
-}
+  twoWayBinding: string = "";
 
-shiftY(){
-  console.log("Shift + Y key pressed");
-}
+  clickCount = 0;
+  btnClicked() {
+    this.clickCount = this.clickCount + 1;
+  }
+
+  shiftY() {
+    console.log("Shift + Y key pressed");
+  }
 }
