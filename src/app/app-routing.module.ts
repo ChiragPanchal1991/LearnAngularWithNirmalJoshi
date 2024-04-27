@@ -18,6 +18,7 @@ import { EmployeeComponent } from './routing/dynamic-routing/employee/employee.c
 import { QueryPeramComponent } from './routing/query-peram/query-peram.component';
 import { InoutOutputComponent } from './Decorators/inout-output/inout-output.component';
 import { ViewChildComponent } from './Decorators/view-child/view-child.component';
+import { ContentChildComponent } from './Decorators/content-child/content-child.component';
 
 const routes: Routes = [
   {path:"bindings",component:FirstTestComponent},
@@ -38,6 +39,7 @@ const routes: Routes = [
   {path:"queryperam-routing",component:QueryPeramComponent},
   {path:"input-output",component:InoutOutputComponent},
   {path:"view-child",component:ViewChildComponent},
+  {path:"content-child",component:ContentChildComponent},
   {path:"", redirectTo:"/bindings",pathMatch:"prefix"},//if no route is provided then app will redirect to default route
   {path:"**",component:PageNotFoundComponent}//Provided route is not exist then display configured componets
 ];

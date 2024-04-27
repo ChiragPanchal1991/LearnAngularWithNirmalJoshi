@@ -25,6 +25,9 @@ import { InoutOutputComponent } from './Decorators/inout-output/inout-output.com
 import { ViewChildComponent } from './Decorators/view-child/view-child.component';
 import { ChildComponent } from './Decorators/inout-output/child/child.component';
 import { ViewchildChildComponent } from './Decorators/view-child/viewchild-child/viewchild-child.component';
+import { ContentChildComponent } from './Decorators/content-child/content-child.component';
+import { ContentchildChildComponent } from './Decorators/content-child/contentchild-child/contentchild-child.component';
+import { FontDecoraterDirective } from './Decorators/content-child/font-decorater.directive';
 
 @NgModule({
   declarations: [
@@ -49,7 +52,10 @@ import { ViewchildChildComponent } from './Decorators/view-child/viewchild-child
     InoutOutputComponent,
     ViewChildComponent,
     ChildComponent,
-    ViewchildChildComponent
+    ViewchildChildComponent,
+    ContentChildComponent,
+    ContentchildChildComponent,
+    FontDecoraterDirective
   ],
   imports: [
     BrowserModule,

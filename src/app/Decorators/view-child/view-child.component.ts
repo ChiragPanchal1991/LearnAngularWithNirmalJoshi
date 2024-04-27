@@ -9,18 +9,18 @@ import { ViewchildChildComponent } from './viewchild-child/viewchild-child.compo
 export class ViewChildComponent implements AfterViewInit {
   @ViewChild(ViewchildChildComponent) childComponent?: ViewchildChildComponent;
   @ViewChild('message') messageRef?: ElementRef<HTMLParagraphElement>;
-ngAfterViewInit(): void {
-  this.messageRef = this.childComponent?.messageRef;
+  ngAfterViewInit(): void {
+    this.messageRef = this.childComponent?.messageRef;
 
-  if(this.messageRef)
-    this.messageRef.nativeElement.innerHTML = "ngAfterViewInit hook change the message";
-}
+    if (this.messageRef)
+      this.messageRef.nativeElement.innerHTML = "ngAfterViewInit hook change the message";
+  }
 
-ChangeMessage(message:string){
-console.log(message);
-  if(this.messageRef)
-    this.messageRef.nativeElement.innerHTML = message;
-}
+  ChangeMessage(message: string) {
+    console.log(message);
+    if (this.messageRef)
+      this.messageRef.nativeElement.innerHTML = message;
+  }
 
 
 
