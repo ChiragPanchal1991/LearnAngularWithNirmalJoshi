@@ -25,6 +25,7 @@
       <h1>Life cycle hooks</h1>
       <a routerLink="./hooks/ng-on-changes">Ng On Changes</a><br>
       <a routerLink="./hooks/ng-on-init">Ng On init</a>
+      <!-- Decorators -->
       <div>
         <h1>Decorators</h1>
         <div>
@@ -41,30 +42,60 @@
         <div>
           <h4>View Child</h4>
           <p>
-            In this example we have used <b>&commat;ViewChild</b> decorator with <b>ngAfterViewInit</b> lifecycle hook. 
+            In this example we have used <b>&commat;ViewChild</b> decorator with <b>ngAfterViewInit</b> lifecycle hook.
           </p>
           <a routerLink="./view-child">View Child</a><br>
         </div>
         <div>
           <h4>Content Child</h4>
           <p>
-            In this example we have used <b>&commat;ContentChild</b> decorator with <b>ngAfterContentInit</b> lifecycle hook. 
+            In this example we have used <b>&commat;ContentChild</b> decorator with <b>ngAfterContentInit</b> lifecycle
+            hook.
           </p>
           <a routerLink="./content-child">Content Child</a><br>
         </div>
+        <div>
+          <h4>Host Binding and Host Listener</h4>
+          <p>
+            In this example we have used <b>&commat;HostBinding</b> and <b>&commat;HostListener</b> decorator with
+            custom directive. <br>
+            <b>&commat;HostListener</b> is method decorator.
+          </p>
+          <a routerLink="./host-binding-listener">Host Binding and Host Listener</a><br>
+        </div>
       </div>
-
-      <h1>Routing</h1>
-      <h4>Dynamic Routing</h4>
-      In following example, you can check how to pass route parameters(Dynamic link) and read route parameters from URL
-      in component<br>
-      <a routerLink="./dynamic-routing">Dynamic Routing</a><br>
-      <h4>Nested Routing</h4>
-      In following example, you use of "children" property of Routes class. Check <b>app-routing.module.ts</b> file<br>
-      With the <b>router-outlet</b> directive we can rander component inside other component.<br>
-      <a routerLink="/nested-route">Nested Routing</a><br>
-      <h4>Query Perameter</h4>
-      <a routerLink="queryperam-routing">Queryperam Routing</a>
+      <!-- Pipes -->
+      <div>
+        <h1>Pipes</h1>
+        <div>
+          <h4>
+            Inbuild Pipes
+          </h4>
+          <a routerLink="inbuilt-pipe">Inbuild Pipes</a>
+        </div>
+        <div>
+          <h4>
+            Slice Pipes
+          </h4>
+          <a routerLink="slice-pipe">Slice Pipes</a>
+        </div>
+      </div>  
+      <!-- Routing -->
+      <div>
+        <h1>Routing</h1>
+        <h4>Dynamic Routing</h4>
+        In following example, you can check how to pass route parameters(Dynamic link) and read route parameters from
+        URL
+        in component<br>
+        <a routerLink="./dynamic-routing">Dynamic Routing</a><br>
+        <h4>Nested Routing</h4>
+        In following example, you use of "children" property of Routes class. Check <b>app-routing.module.ts</b>
+        file<br>
+        With the <b>router-outlet</b> directive we can rander component inside other component.<br>
+        <a routerLink="/nested-route">Nested Routing</a><br>
+        <h4>Query Perameter</h4>
+        <a routerLink="queryperam-routing">Queryperam Routing</a>
+      </div>
     </div>
 
 

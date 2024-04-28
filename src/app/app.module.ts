@@ -27,7 +27,10 @@ import { ChildComponent } from './Decorators/inout-output/child/child.component'
 import { ViewchildChildComponent } from './Decorators/view-child/viewchild-child/viewchild-child.component';
 import { ContentChildComponent } from './Decorators/content-child/content-child.component';
 import { ContentchildChildComponent } from './Decorators/content-child/contentchild-child/contentchild-child.component';
-import { FontDecoraterDirective } from './Decorators/content-child/font-decorater.directive';
+import { HostbindingHostlistenerComponent } from './Decorators/hostbinding-hostlistener/hostbinding-hostlistener.component';
+import { TextDecoraterDirective } from './Decorators/hostbinding-hostlistener/text-decorater.directive';
+import { InbuiltPipesComponent } from './pipes/inbuilt-pipes/inbuilt-pipes.component';
+import { SlicePipeComponent } from './pipes/slice-pipe/slice-pipe.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +58,10 @@ import { FontDecoraterDirective } from './Decorators/content-child/font-decorate
     ViewchildChildComponent,
     ContentChildComponent,
     ContentchildChildComponent,
-    FontDecoraterDirective
+    HostbindingHostlistenerComponent,
+    TextDecoraterDirective,
+    InbuiltPipesComponent,
+    SlicePipeComponent
   ],
   imports: [
     BrowserModule,

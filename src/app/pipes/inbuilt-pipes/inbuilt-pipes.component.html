@@ -1,0 +1,34 @@
+<div>
+    <b>Date pipe</b>
+<p>US time - Report date:{{systemData|date:'dd-MMM-yyyy hh:mm': 'EDT'}}<br>
+Word time - Report date:{{systemData|date:'dd-MMM-yyyy hh:mm': 'UTC'}}<br>
+India time - Report date:{{systemData|date:'dd-MMM-yyyy hh:mm': 'IST'}}
+</p>
+</div>
+<div>
+    <b>titlecase,uppercase,slice, and currency pipes </b>
+<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Location</td>
+            <td>Salary</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.name|titlecase}}</td>
+            <td>{{employee.age}}</td>
+            <td>{{employee.location|slice:0:3|uppercase}}</td>
+            <td>{{employee.salary|currency:'INR'}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div>
+    <b>json pipe</b>
+<p>
+{{employees|json}}
+</p>
+</div>

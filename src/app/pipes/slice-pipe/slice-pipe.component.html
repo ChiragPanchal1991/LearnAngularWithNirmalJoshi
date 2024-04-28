@@ -1,0 +1,44 @@
+<div>
+    <b>Slice pipe with text</b>
+    <div> Full text:- {{text}}</div>
+
+    <ul>
+        <li> Display first 10 charactors:- {{text|slice:0:10}}</li>
+        <li> Display last 10 charactors:- {{text|slice:-10}}</li>
+        <li> Remove last 10 charactors:- {{text|slice:0:-10}}</li>
+    </ul>
+</div>
+<div>
+    <b>Slice pipe with Array</b>
+    <div> Full array:- {{array}}</div>
+    <ul>
+        <li> Display first 2 item from array:- {{array|slice:0:2}}</li>
+        <li> Display last 2 item from array:- {{array|slice:-2}}</li>
+        <li> Remove last 3 item from arrays:- {{array|slice:0:-3}}</li>
+    </ul>
+</div>
+<div>
+    <b>Paging With Slice pipe</b>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Age</td>
+                    <td>Location</td>
+                    <td>Salary</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let employee of employees|slice:startIndex:endIndex">
+                    <td>{{employee.name|titlecase}}</td>
+                    <td>{{employee.age}}</td>
+                    <td>{{employee.location|slice:0:3|uppercase}}</td>
+                    <td>{{employee.salary|currency:'INR'}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <button (click)="onPreviousClick()" [disabled]="isPreviousDisabled">Previous</button>
+        <button (click)="onNextClick()" [disabled]="isNextDisabled">Next</button>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+table{
+    border-collapse: collapse;
+    /* display: flex; */
+    /* margin: auto; */
+}
+table td{
+border: 1px solid black;
+}
+
+table thead{
+    background-color: #878787;
+    color: white;
+}
