@@ -15,4 +15,6 @@ export class InbuiltPipesComponent {
  ];
 
  systemData:Date= new Date();
+
+ pi=3.145345545;
 }

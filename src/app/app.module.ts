@@ -31,6 +31,8 @@ import { HostbindingHostlistenerComponent } from './Decorators/hostbinding-hostl
 import { TextDecoraterDirective } from './Decorators/hostbinding-hostlistener/text-decorater.directive';
 import { InbuiltPipesComponent } from './pipes/inbuilt-pipes/inbuilt-pipes.component';
 import { SlicePipeComponent } from './pipes/slice-pipe/slice-pipe.component';
+import { CustomPipeComponent } from './pipes/custom-pipe/custom-pipe.component';
+import { FormatPhoneNumberPipe } from './pipes/custom-pipe/format-phone-number.pipe';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,9 @@ import { SlicePipeComponent } from './pipes/slice-pipe/slice-pipe.component';
     HostbindingHostlistenerComponent,
     TextDecoraterDirective,
     InbuiltPipesComponent,
-    SlicePipeComponent
+    SlicePipeComponent,
+    CustomPipeComponent,
+    FormatPhoneNumberPipe
   ],
   imports: [
     BrowserModule,

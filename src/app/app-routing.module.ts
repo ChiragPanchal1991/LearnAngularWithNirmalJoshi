@@ -22,6 +22,7 @@ import { ContentChildComponent } from './Decorators/content-child/content-child.
 import { HostbindingHostlistenerComponent } from './Decorators/hostbinding-hostlistener/hostbinding-hostlistener.component';
 import { InbuiltPipesComponent } from './pipes/inbuilt-pipes/inbuilt-pipes.component';
 import { SlicePipeComponent } from './pipes/slice-pipe/slice-pipe.component';
+import { CustomPipeComponent } from './pipes/custom-pipe/custom-pipe.component';
 
 const routes: Routes = [
   {path:"bindings",component:FirstTestComponent},
@@ -46,6 +47,7 @@ const routes: Routes = [
   {path:"host-binding-listener",component:HostbindingHostlistenerComponent},
   {path:"inbuilt-pipe",component:InbuiltPipesComponent},
   {path:"slice-pipe",component:SlicePipeComponent},
+  {path:"custome-pipe",component:CustomPipeComponent},
   {path:"", redirectTo:"/bindings",pathMatch:"prefix"},//if no route is provided then app will redirect to default route
   {path:"**",component:PageNotFoundComponent}//Provided route is not exist then display configured componets
 ];
