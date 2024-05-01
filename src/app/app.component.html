@@ -29,7 +29,7 @@
       <div>
         <h1>Decorators</h1>
         <div>
-          <h4>Inout Output</h4>
+          <h4><a routerLink="./input-output">Input Output</a></h4>
           <p>
             1. &commat;input and &commat;output both are <b>property decorators</b>.<br>
             2. input property acts as attribute, we have bind it with squer brackets "[]".<br>
@@ -37,22 +37,19 @@
             to use <b>EventEmitter.</b> <br>
             4. In this example I have also implement life cycle hook.
           </p>
-          <a routerLink="./input-output">Input Output</a><br>
         </div>
         <div>
-          <h4>View Child</h4>
+          <h4><a routerLink="./view-child">View Child</a></h4>
           <p>
             In this example we have used <b>&commat;ViewChild</b> decorator with <b>ngAfterViewInit</b> lifecycle hook.
           </p>
-          <a routerLink="./view-child">View Child</a><br>
         </div>
         <div>
-          <h4>Content Child</h4>
+          <h4><a routerLink="./content-child">Content Child</a></h4>
           <p>
             In this example we have used <b>&commat;ContentChild</b> decorator with <b>ngAfterContentInit</b> lifecycle
             hook.
           </p>
-          <a routerLink="./content-child">Content Child</a><br>
         </div>
         <div>
           <h4>Host Binding and Host Listener</h4>
@@ -85,27 +82,49 @@
           </h4>
           <a routerLink="custome-pipe">Pipes</a>
         </div>
-      </div>  
+      </div>
       <!-- Routing -->
       <div>
         <h1>Routing</h1>
-        <h4>Dynamic Routing</h4>
-        In following example, you can check how to pass route parameters(Dynamic link) and read route parameters from
-        URL
-        in component<br>
-        <a routerLink="./dynamic-routing">Dynamic Routing</a><br>
-        <h4>Nested Routing</h4>
-        In following example, you use of "children" property of Routes class. Check <b>app-routing.module.ts</b>
-        file<br>
-        With the <b>router-outlet</b> directive we can rander component inside other component.<br>
-        <a routerLink="/nested-route">Nested Routing</a><br>
-        <h4>Query Perameter</h4>
-        <a routerLink="queryperam-routing">Queryperam Routing</a>
+        <div>
+          <h4><a routerLink="./dynamic-routing">Dynamic Routing</a></h4>
+          <p>In Dynamic Routing example, you can check how to pass route parameters(Dynamic link) and read route parameters from
+            URL in component</p>
+        </div>
+        <div>
+          <h4><a routerLink="/nested-route">Nested Routing</a></h4>
+          In Nested Routing example, you use of "children" property of Routes class. Check <b>app-routing.module.ts</b>
+          file<br>
+          With the <b>router-outlet</b> directive we can rander component inside other component.<br>
+        </div>
+        <div>
+          <h4><a routerLink="queryperam-routing">Queryperam Routing</a></h4>
+        </div>
       </div>
       <div>
         <h1>Services</h1>
-        <h4>Custom Service</h4>
-        <a routerLink="custom-service">Custom Service</a>
+        <h4><a routerLink="custom-service">Custom Service</a></h4>
+
+      </div>
+      <div>
+        <h1>Forms</h1>
+        <div>
+          <h4><a routerLink="template-driven-form">Template Driven Form</a></h4>
+          <ul>
+            <li>To create template driven form we need to import <b>NgForm</b> from <b>&commat;angular/forms</b> module
+            </li>
+            <li>We need to ngForm directive to form element, ex: #myForm="ngForm"</li>
+            <li>After creating the form form submit event handeled by <b>ngSubmit</b> event, ex:
+              (ngSubmit)="onSubmit(myForm)</li>
+            <li>Template Driven Forms are useful for small and simple forms</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Reactive Form</h2>
+          <h4><a routerLink="form-control">Form Control</a></h4>
+
+
+        </div>
       </div>
     </div>
 

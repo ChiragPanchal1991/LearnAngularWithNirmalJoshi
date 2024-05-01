@@ -37,7 +37,8 @@ import { CustomerServiceService } from './custom-service/customer-service.servic
 import { CustomersComponent } from './custom-service/customers/customers.component';
 import { CCounterComponent } from './custom-service/c-counter/c-counter.component';
 import { CCounterChildComponent } from './custom-service/c-counter/c-counter-child/c-counter-child.component';
-import { CCounterService } from './custom-service/c-counter/c-counter.service';
+import { TemplateDrivenFormComponent } from './forms/template-driven-form/template-driven-form.component';
+import { FormControlComponent } from './forms/reactive-forms/form-control/form-control.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,9 @@ import { CCounterService } from './custom-service/c-counter/c-counter.service';
     FormatPhoneNumberPipe,
     CustomersComponent,
     CCounterComponent,
-    CCounterChildComponent
+    CCounterChildComponent,
+    TemplateDrivenFormComponent,
+    FormControlComponent
   ],
   imports: [
     BrowserModule,
