@@ -33,6 +33,11 @@ import { InbuiltPipesComponent } from './pipes/inbuilt-pipes/inbuilt-pipes.compo
 import { SlicePipeComponent } from './pipes/slice-pipe/slice-pipe.component';
 import { CustomPipeComponent } from './pipes/custom-pipe/custom-pipe.component';
 import { FormatPhoneNumberPipe } from './pipes/custom-pipe/format-phone-number.pipe';
+import { CustomerServiceService } from './custom-service/customer-service.service';
+import { CustomersComponent } from './custom-service/customers/customers.component';
+import { CCounterComponent } from './custom-service/c-counter/c-counter.component';
+import { CCounterChildComponent } from './custom-service/c-counter/c-counter-child/c-counter-child.component';
+import { CCounterService } from './custom-service/c-counter/c-counter.service';
 
 @NgModule({
   declarations: [
@@ -65,14 +70,17 @@ import { FormatPhoneNumberPipe } from './pipes/custom-pipe/format-phone-number.p
     InbuiltPipesComponent,
     SlicePipeComponent,
     CustomPipeComponent,
-    FormatPhoneNumberPipe
+    FormatPhoneNumberPipe,
+    CustomersComponent,
+    CCounterComponent,
+    CCounterChildComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CustomerServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
