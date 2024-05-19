@@ -25,6 +25,8 @@ import { SlicePipeComponent } from './pipes/slice-pipe/slice-pipe.component';
 import { CustomPipeComponent } from './pipes/custom-pipe/custom-pipe.component';
 import { CustomersComponent } from './custom-service/customers/customers.component';
 import { TemplateDrivenFormComponent } from './forms/template-driven-form/template-driven-form.component';
+import { FormControlComponent } from './forms/reactive-forms/form-control/form-control.component';
+import { FormGroupComponent } from './forms/reactive-forms/form-group/form-group.component';
 
 const routes: Routes = [
   {path:"bindings",component:FirstTestComponent},
@@ -52,6 +54,8 @@ const routes: Routes = [
   {path:"custome-pipe",component:CustomPipeComponent},
   {path:"custom-service",component:CustomersComponent},
   {path:"template-driven-form", component: TemplateDrivenFormComponent},
+  {path:"form-control", component: FormControlComponent},
+  {path:"form-group", component: FormGroupComponent},
   {path:"", redirectTo:"/bindings",pathMatch:"prefix"},//if no route is provided then app will redirect to default route
   {path:"**",component:PageNotFoundComponent}//Provided route is not exist then display configured componets
 ];

@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstTestComponent } from './first-test/first-test.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { NgIfComponent } from './directive/structural-directives/ng-if/ng-if.component';
 import { NgForComponent } from './directive/structural-directives/ng-for/ng-for.component';
 import { NgSwitchComponent } from './directive/structural-directives/ng-switch/ng-switch.component';
@@ -39,6 +39,8 @@ import { CCounterComponent } from './custom-service/c-counter/c-counter.componen
 import { CCounterChildComponent } from './custom-service/c-counter/c-counter-child/c-counter-child.component';
 import { TemplateDrivenFormComponent } from './forms/template-driven-form/template-driven-form.component';
 import { FormControlComponent } from './forms/reactive-forms/form-control/form-control.component';
+import { FormGroupComponent } from './forms/reactive-forms/form-group/form-group.component';
+import { FormArrayComponent } from './forms/reactive-forms/form-array/form-array.component';
 
 @NgModule({
   declarations: [
@@ -76,12 +78,15 @@ import { FormControlComponent } from './forms/reactive-forms/form-control/form-c
     CCounterComponent,
     CCounterChildComponent,
     TemplateDrivenFormComponent,
-    FormControlComponent
+    FormControlComponent,
+    FormGroupComponent,
+    FormArrayComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [CustomerServiceService],
   bootstrap: [AppComponent]
