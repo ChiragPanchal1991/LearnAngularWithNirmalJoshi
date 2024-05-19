@@ -27,6 +27,7 @@ import { CustomersComponent } from './custom-service/customers/customers.compone
 import { TemplateDrivenFormComponent } from './forms/template-driven-form/template-driven-form.component';
 import { FormControlComponent } from './forms/reactive-forms/form-control/form-control.component';
 import { FormGroupComponent } from './forms/reactive-forms/form-group/form-group.component';
+import { FormArrayComponent } from './forms/reactive-forms/form-array/form-array.component';
 
 const routes: Routes = [
   {path:"bindings",component:FirstTestComponent},
@@ -56,6 +57,7 @@ const routes: Routes = [
   {path:"template-driven-form", component: TemplateDrivenFormComponent},
   {path:"form-control", component: FormControlComponent},
   {path:"form-group", component: FormGroupComponent},
+  {path:"form-array", component: FormArrayComponent},
   {path:"", redirectTo:"/bindings",pathMatch:"prefix"},//if no route is provided then app will redirect to default route
   {path:"**",component:PageNotFoundComponent}//Provided route is not exist then display configured componets
 ];
