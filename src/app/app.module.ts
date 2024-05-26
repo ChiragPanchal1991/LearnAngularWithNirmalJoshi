@@ -41,6 +41,8 @@ import { TemplateDrivenFormComponent } from './forms/template-driven-form/templa
 import { FormControlComponent } from './forms/reactive-forms/form-control/form-control.component';
 import { FormGroupComponent } from './forms/reactive-forms/form-group/form-group.component';
 import { FormArrayComponent } from './forms/reactive-forms/form-array/form-array.component';
+import { FormBuilderComponent } from './forms/reactive-forms/form-builder/form-builder.component';
+import { FormValidationComponent } from './forms/reactive-forms/form-validation/form-validation.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +82,9 @@ import { FormArrayComponent } from './forms/reactive-forms/form-array/form-array
     TemplateDrivenFormComponent,
     FormControlComponent,
     FormGroupComponent,
-    FormArrayComponent
+    FormArrayComponent,
+    FormBuilderComponent,
+    FormValidationComponent
   ],
   imports: [
     BrowserModule,
