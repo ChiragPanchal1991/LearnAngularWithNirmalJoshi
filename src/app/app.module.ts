@@ -43,6 +43,7 @@ import { FormGroupComponent } from './forms/reactive-forms/form-group/form-group
 import { FormArrayComponent } from './forms/reactive-forms/form-array/form-array.component';
 import { FormBuilderComponent } from './forms/reactive-forms/form-builder/form-builder.component';
 import { FormValidationComponent } from './forms/reactive-forms/form-validation/form-validation.component';
+import { FormDirtyPristineComponent } from './forms/reactive-forms/form-dirty-pristine/form-dirty-pristine.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +85,8 @@ import { FormValidationComponent } from './forms/reactive-forms/form-validation/
     FormGroupComponent,
     FormArrayComponent,
     FormBuilderComponent,
-    FormValidationComponent
+    FormValidationComponent,
+    FormDirtyPristineComponent
   ],
   imports: [
     BrowserModule,

@@ -30,6 +30,7 @@ import { FormGroupComponent } from './forms/reactive-forms/form-group/form-group
 import { FormArrayComponent } from './forms/reactive-forms/form-array/form-array.component';
 import { FormBuilderComponent } from './forms/reactive-forms/form-builder/form-builder.component';
 import { FormValidationComponent } from './forms/reactive-forms/form-validation/form-validation.component';
+import { FormDirtyPristineComponent } from './forms/reactive-forms/form-dirty-pristine/form-dirty-pristine.component';
 
 const routes: Routes = [
   {path:"bindings",component:FirstTestComponent},
@@ -62,6 +63,7 @@ const routes: Routes = [
   {path:"form-array", component: FormArrayComponent},
   {path:"form-builder",component:FormBuilderComponent},
   {path:"form-validation", component:FormValidationComponent},
+  {path:"form-dirty-pristine",component:FormDirtyPristineComponent},
   {path:"", redirectTo:"/bindings",pathMatch:"prefix"},//if no route is provided then app will redirect to default route
   {path:"**",component:PageNotFoundComponent}//Provided route is not exist then display configured componets
 ];
